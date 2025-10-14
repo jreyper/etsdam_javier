@@ -5,8 +5,11 @@
 ###La tarea estará hecha con el lenguaje markdown:
 
 ##Lista de viñetas:
+
 -UT1
+
 -UT2
+
 -UT3
 
 ##Lista numerada:
@@ -35,5 +38,6 @@ Esto está en codigo
 ##Cita en bloque:
 
 >Una cita
+
 >Otra cita
 
