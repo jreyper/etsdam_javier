@@ -1,41 +1,42 @@
-#UT1-A2 Sintaxis Markdown
-
-##Tarea Markdown
-
-###La tarea estará hecha con el lenguaje markdown:
-
-##Lista de viñetas:
+# UT1-A2 Sintaxis Markdown
+___
+## Tarea Markdown
+___
+### La tarea estará hecha con el lenguaje markdown:
+___
+## Lista de viñetas:
 
 -UT1
 
 -UT2
 
 -UT3
-
-##Lista numerada:
+___
+## Lista numerada:
 1. UT1
 2. UT2
 3. UT3
-
+___
 **Negrita**
-*Cursiva*
 
-##Enlace:
+*Cursiva*
+___
+## Enlace:
 
 [Pan](https://es.wikipedia.org/wiki/Pan)
 <https://es.wikipedia.org/wiki/Pan>
-
-##Imagen:
+___
+## Imagen:
 
 [Mbappe](etsdam_javier/ut1/a1/img/Mbappe.jpeg)
-
-##Código:
+___
+## Código:
 
 ~~~
 Esto está en codigo
 ~~~
-
-##Cita en bloque:
+___
+## Cita en bloque:
 
 >Una cita
 
