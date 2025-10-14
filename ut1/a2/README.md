@@ -24,11 +24,12 @@ ___
 ## Enlace:
 
 [Pan](https://es.wikipedia.org/wiki/Pan)
+
 <https://es.wikipedia.org/wiki/Pan>
 ___
 ## Imagen:
 
-[Mbappe](etsdam_javier/ut1/a1/img/Mbappe.jpeg)
+[Mbappe](/ut1/a1/img/Mbappe.jpeg)
 ___
 ## Código:
 
