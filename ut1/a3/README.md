@@ -1,13 +1,13 @@
 
 <center>
 
-# TÍTULO DE LA PRÁCTICA
+# UT1-A3 Practicando Git
 
 
 </center>
 
-***Nombre:***
-***Curso:*** 
+***Nombre:***Javier
+***Curso:***1ºDAM 
 
 ### ÍNDICE
 
@@ -20,24 +20,33 @@
 
 #### ***Introducción***. <a name="id1"></a>
 
-Aquí explicamos brevemente la parte teórica que tiene que ver con la práctica que se va a realizar
+Esta práctica muestra el uso básico de Git mediante la creación de un repositorio, gestión de ramas,
+uso de tags, resolución de conflictos y configuración de archivos ignorados.
 
 #### ***Objetivos***. <a name="id2"></a>
 
-Aquí explicamos los objetivos que se pretenden alcanzar al realizar la práctica.
+Los objetivos que buscamos son practicar con Git y la terminal.
 
 #### ***Material empleado***. <a name="id3"></a>
 
-Enumeramos el material empleado tanto hardware como software y las conficuraciones que hacemos (configuraciones de red por ejemplo) 
+En esta práctica para realizarla se ha empleado una cuenta en github, acceso a internet, una maquina virtual con 
+el sistema operativo linux, un editor de texto como "nano" o "vi",ficheros y carpetas creadas en el proceso,
+ramas, tags,comandos,etc.... 
 
 #### ***Desarrollo***. <a name="id4"></a>
 
-En esta parte explicamos detalladamente los pasos que seguimos para realizar la práctica incluyendo capturas de pantalla y explicando que vemos en ellas. 
+Primero saco la clave ssh ya que no habia trabajado antes en esta maquina y la pegue en github, seguidamente cloné el repositorio de "my-proyecto" y el de "etsdam_javier",
+añadí el archivo README.md en el repositorio de etsdam_javier.
+
+Hecho todo eso creé el fichero que pedía llamado privado.txt y una carpeta llamada privada las cuales después había que añadirlas al fichero .gitignore y aparecen en el repositorio. Después
+había que crear otro fichero llamado 1.txt en el que pornerle "Hola", segudamente crear otra rama y poner "adios" en el mismo fichero lo que dio un conflicto ya después solucionado con unos comandos 
+citados en las capturas añadidas en la carpeta "img".
 
 > ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
 
-Si encontramos dificultades a la hora de realizar algún paso debemos explicar esas dificultades, que pasos hemos seguido para resolverla y los resultados obtenidos.
+En esta práctica he tenido varios problemas pero los he solucionado como por ejemplo que puse el archivo README.md en una carpeta que no iba y lo tuve que quitar usando el comando "rm -r 'archivo'"
+y moviendolo a la otra carpeta correspondiente con el comando "mv~/'ubicacion'". 
 
 #### ***Conclusiones***. <a name="id5"></a>
 
-En esta parte debemos exponer las conclusiones que sacamos del desarrollo de la prácica.
+En esta práctica me ha ayudado a practicar y recordar comandos lo que me va a facilitar la asignatura mucho más y aunque haya tenido poco tiempo para hacer esta práctica creo que me ha servido mucho. 
