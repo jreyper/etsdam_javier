@@ -1,10 +1,7 @@
 
-<center>
 
 # UT1-A3 Practicando Git
 
-
-</center>
 
 ***Nombre:***Javier
 ***Curso:***1ºDAM 
