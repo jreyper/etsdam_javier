@@ -35,7 +35,9 @@ ramas, tags,comandos,etc....
 
 #### ***Desarrollo***. <a name="id4"></a>
 
-Primero saco la clave ssh ya que no habia trabajado antes en esta maquina y la pegue en github, seguidamente cloné el repositorio de "my-proyecto" y el de "etsdam_javier",
+Primero saco la clave ssh ya que no habia trabajado antes en esta maquina y la pegue en github
+<img src="img/img1ssh.jpeg">
+seguidamente cloné el repositorio de "my-proyecto" y el de "etsdam_javier",
 añadí el archivo README.md en el repositorio de etsdam_javier.
 
 Hecho todo eso creé el fichero que pedía llamado privado.txt y una carpeta llamada privada las cuales después había que añadirlas al fichero .gitignore y aparecen en el repositorio. Después
