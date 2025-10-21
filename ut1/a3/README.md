@@ -1,13 +1,13 @@
 
 
 # UT1-A3 Practicando Git
-
+___
 ***Nombre:*** Javier
 <br>
 ***Curso:*** 1ºDAM 
 
 ### ÍNDICE
-
+___
 + [Introducción](#id1)
 + [Objetivos](#id2)
 + [Material empleado](#id3)
@@ -16,7 +16,7 @@
 
 
 #### ***Introducción***. <a name="id1"></a>
-
+___
 Esta práctica muestra el uso básico de Git mediante la creación de un repositorio, gestión de ramas,
 uso de tags, resolución de conflictos y configuración de archivos ignorados.
 
