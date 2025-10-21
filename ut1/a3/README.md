@@ -35,14 +35,39 @@ ramas, tags,comandos,etc....
 
 #### ***Desarrollo***. <a name="id4"></a>
 
-Primero saco la clave ssh ya que no habia trabajado antes en esta maquina y la pegue en github
+Primero saco la clave ssh ya que no habia trabajado antes en esta maquina y la pegue en github.
+
 <img src="img/img1ssh.jpeg">
-seguidamente cloné el repositorio de "my-proyecto" y el de "etsdam_javier",
+
+Seguidamente cloné el repositorio de "my-proyecto" y el de "etsdam_javier"
 añadí el archivo README.md en el repositorio de etsdam_javier.
 
-Hecho todo eso creé el fichero que pedía llamado privado.txt y una carpeta llamada privada las cuales después había que añadirlas al fichero .gitignore y aparecen en el repositorio. Después
-había que crear otro fichero llamado 1.txt en el que pornerle "Hola", segudamente crear otra rama y poner "adios" en el mismo fichero lo que dio un conflicto ya después solucionado con unos comandos 
-citados en las capturas añadidas en la carpeta "img".
+<img src="img/img2 clone.jpeg">
+<img src="img/img3 clone2.jpeg">
+
+Hecho todo eso creé el fichero que pedía llamado privado.txt y una carpeta llamada privada las cuales después había que añadirlas al fichero .gitignore y aparecen en el repositorio.
+
+<img src="img/img5 privado.jpeg">
+
+Después había que crear otro fichero llamado 1.txt en el que pornerle "Hola".
+
+<img src="img/img6 txt1.jpeg">
+
+Segudamente crear otra rama y poner "adios" en el mismo fichero lo que dio un conflicto ya después solucionado con unos comandos.
+
+<img src="img/img7 tag.jpeg">
+<img src="img/img8 merge.jpeg">
+<img src="img/img9 conflicto.jpeg">
+
+Después te pedía el listado de ramas
+
+<img src="img/img10 lista merge.jpeg">
+
+Y finalmente te pedia que eliminaras la rama
+
+<img src="img/img11 eliminacion rama.jpeg">
+
+
 
 > ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
 
