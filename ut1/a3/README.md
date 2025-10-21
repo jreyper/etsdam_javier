@@ -2,8 +2,8 @@
 
 # UT1-A3 Practicando Git
 
-*** Nombre: *** Javier
-*** Curso: *** 1ºDAM 
+***Nombre:*** Javier
+***Curso:*** 1ºDAM 
 
 ### ÍNDICE
 
