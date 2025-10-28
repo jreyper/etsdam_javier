@@ -12,7 +12,8 @@ ___
 + [Objetivos](#id2)
 + [Material empleado](#id3)
 + [Desarrollo](#id4)
-+ [Conclusiones](#id5)
++ [Preguntas](#id5)
++ [Conclusiones](#id6)
 
 ___
 #### ***Introducción***. <a name="id1"></a>
@@ -70,7 +71,16 @@ ___
 
 En esta práctica he tenido varios problemas pero los he solucionado como por ejemplo que puse el archivo README.md en una carpeta que no iba y lo tuve que quitar usando el comando "rm -r 'archivo'"
 y moviendolo a la otra carpeta correspondiente con el comando "mv~/'ubicacion'". 
+
+#### ***Preguntas***. <a name="id5"></a>
+
+1. Respuesta: Cuando clonas un repositorio, Git ya configura automáticamente el repositorio remoto y la rama que estás siguiendo, por lo que al hacer "git push" no necesitas usar "origin master".
+2. Respuesta: Si el fichero privado.txt y el directorio privada están correctamente especificados en el fichero .gitignore, Git los ignorará.
+3. Respuesta: La accion de "git add" mueve los cambios realizados en los ficheros de tu area de trabajo al area de preparación. Por otro lado el "git commit" coge todos los ficheros que están en el area de preparación y los pasa al repositorio.
+4. Respuesta: Un tag en un repositorio es una etiqueta que se utiliza para marcar un punto específico en la historia del repositorio como importante.
+5. Respuesta: Las ramas permiten el desarrollo aislado y simultáneo de características o correcciones. Esto es importante para la colaboración en equipos de cualquier tamaño, desde pequeños hasta grandes, manteniendo la estabilidad del código y facilitando la gestión de múltiples líneas de trabajo.
+6. Respuesta: No, ya que los conflictos solo ocurren si las dos ramas modificaron las mismas líneas de código; si trabajaron en lugares distintos, no habrá problema.
 ___
-#### ***Conclusiones***. <a name="id5"></a>
+#### ***Conclusiones***. <a name="id6"></a>
 
 En esta práctica me ha ayudado a practicar y recordar comandos lo que me va a facilitar la asignatura mucho más y aunque haya tenido poco tiempo para hacer esta práctica creo que me ha servido mucho. 
