@@ -72,6 +72,7 @@ ___
 En esta práctica he tenido varios problemas pero los he solucionado como por ejemplo que puse el archivo README.md en una carpeta que no iba y lo tuve que quitar usando el comando "rm -r 'archivo'"
 y moviendolo a la otra carpeta correspondiente con el comando "mv~/'ubicacion'". 
 
+___
 #### ***Preguntas***. <a name="id5"></a>
 
 1. Respuesta: Cuando clonas un repositorio, Git ya configura automáticamente el repositorio remoto y la rama que estás siguiendo, por lo que al hacer "git push" no necesitas usar "origin master".
