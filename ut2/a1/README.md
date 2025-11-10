@@ -1,4 +1,4 @@
-#Análisis de Lenguajes de Programación
+# Análisis de Lenguajes de Programación
 | Lenguaje | Mecanismo de Traducción | Paradigma(s) Principal(es) | Tipado (Rigidez) | Tipado (Verificación) | Inferencia de Tipos | Nivel de Abstracción | Uso Principal |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Python | Intérprete | Orientado a Objetos, Imperativo, Funcional | Dinámico | Débil/Fuerte (depende del contexto) | Sí (limitada) | Alto | Desarrollo web, Data Science, Scripting |
