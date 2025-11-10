@@ -1,23 +1,23 @@
-markdown
-| Lenguaje | Mecanismo de Traducción | Paradigma(s) Principal(es) | Sistema de Tipado (Rigidez) | Sistema de Tipado (Verificación) | Inferencia de Tipos | Nivel de Abstracción | Uso Principal |
-|---------------|-------------------------|-------------------------------------------------------------|-----------------------------|----------------------------------|---------------------|----------------------|----------------------------------|
-| Python | Interpretado | Imperativa, Orientada a Objetos, Funcional, Multiparadigma | Fuerte | Dinámico | Sí | Alto | Desarrollo web, Ciencia de datos |
-| Java | Compilado a bytecode | Orientada a Objetos, Imperativa, Multiparadigma | Fuerte | Estático | Sí | Medio | Aplicaciones empresariales |
-| JavaScript | Interpretado | Orientada a Objetos, Funcional, Imperativa, Event-driven | Débil | Dinámico | Sí | Alto | Desarrollo web |
-| C | Compilado | Imperativa, Procedimental | Fuerte | Estático | No | Bajo | Sistemas embebidos, Software de sistema |
-| C++ | Compilado | Orientada a Objetos, Procedimental, Multiparadigma | Fuerte | Estático | No | Bajo-Medio | Software de sistema, Juegos |
-| C# | Compilado a bytecode | Orientada a Objetos, Funcional, Multiparadigma | Fuerte | Estático | Sí | Medio | Aplicaciones empresariales, Juegos |
-| TypeScript | Compilado a JavaScript | Orientada a Objetos, Funcional, Imperativa | Fuerte | Estático | Sí | Alto | Desarrollo web |
-| Go | Compilado | Imperativa, Concurrente, Multiparadigma | Fuerte | Estático | Sí | Medio | Sistemas distribuidos |
-| Ruby | Interpretado | Orientada a Objetos, Funcional, Imperativa | Fuerte | Dinámico | No | Alto | Desarrollo web |
-| Swift | Compilado | Orientada a Objetos, Funcional, Imperativa | Fuerte | Estático | Sí | Alto | Aplicaciones móviles iOS |
-| Kotlin | Compilado a bytecode | Orientada a Objetos, Funcional, Multiparadigma | Fuerte | Estático | Sí | Alto | Aplicaciones móviles Android |
-| PHP | Interpretado | Imperativa, Orientada a Objetos, Procedimental | Débil | Dinámico | No | Alto | Desarrollo web |
-| R | Interpretado | Funcional, Imperativa, Procedimental | Fuerte | Dinámico | No | Alto | Estadística, Ciencia de datos |
-| MATLAB | Interpretado | Imperativa, Procedimental, Funcional | Fuerte | Dinámico | No | Alto | Computación científica |
-| Rust | Compilado | Imperativa, Funcional, Orientada a Objetos | Fuerte | Estático | Sí | Medio | Sistemas embebidos, Software seguro |
-| Dart | Compilado a bytecode | Orientada a Objetos, Funcional | Fuerte | Estático | Sí | Alto | Aplicaciones móviles (Flutter) |
-| Scala | Compilado | Funcional, Orientada a Objetos, Multiparadigma | Fuerte | Estático | Sí | Alto | Aplicaciones empresariales |
-| Perl | Interpretado | Imperativa, Procedimental, Orientada a Objetos | Débil | Dinámico | No | Alto | Scripting, Administración sistemas |
-| SQL | Interpretado | Declarativo | Fuerte | Dinámico | No | Alto | Bases de datos |
-| Lua | Interpretado | Imperativa, Procedimental, Funcional | Débil | Dinámico | No | Alto | Juegos, Sistemas embebidos |
+#Análisis de Lenguajes de Programación
+| Lenguaje | Mecanismo de Traducción | Paradigma(s) Principal(es) | Tipado (Rigidez) | Tipado (Verificación) | Inferencia de Tipos | Nivel de Abstracción | Uso Principal |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Python | Intérprete | Orientado a Objetos, Imperativo, Funcional | Dinámico | Débil/Fuerte (depende del contexto) | Sí (limitada) | Alto | Desarrollo web, Data Science, Scripting |
+| C | Compilado | Imperativo, Procedural | Estático | Fuerte | No | Bajo | Sistemas operativos, Sistemas embebidos |
+| C++ | Compilado | Orientado a Objetos, Imperativo, Genérico | Estático | Fuerte | No | Medio-Bajo | Software de alto rendimiento, Juegos |
+| Java | Compilado a Bytecode (JVM) | Orientado a Objetos, Imperativo | Estático | Fuerte | No | Medio | Aplicaciones empresariales, Android |
+| C# | Compilado a Bytecode (CLR) | Orientado a Objetos, Imperativo, Funcional | Estático | Fuerte | Sí (limitada) | Medio | Desarrollo .NET, Windows, Web |
+| JavaScript | Intérprete / JIT | Funcional, Orientado a Objetos, Imperativo | Dinámico | Débil | Sí (limitada) | Medio | Desarrollo Web (Frontend/Backend) |
+| Visual Basic | Compilado / Intérprete | Orientado a Objetos, Imperativo | Dinámico | Débil | No | Medio | Aplicaciones de escritorio (Windows) |
+| Delphi/Object Pascal | Compilado | Orientado a Objetos, Imperativo | Estático | Fuerte | No | Medio | Aplicaciones de escritorio nativas |
+| Perl | Intérprete | Imperativo, Funcional, Orientado a Objetos | Dinámico | Débil | No | Medio | Procesamiento de texto, Administración de sistemas |
+| SQL | Declarativo (Ejecutado por motor) | Declarativo | Estático (en consultas) | Fuerte | N/A | Alto | Gestión y consulta de bases de datos |
+| Go | Compilado | Concurrente, Imperativo, Estructurado | Estático | Fuerte | Sí | Medio | Desarrollo de sistemas, Microservicios |
+| R | Intérprete | Estadístico, Funcional | Dinámico | Débil | Sí | Alto | Análisis estadístico, Visualización de datos |
+| Fortran | Compilado | Imperativo, Procedural | Estático | Fuerte | No | Medio-Bajo | Computación científica y numérica de alto rendimiento |
+| Rust | Compilado | Imperativo, Funcional, Concurrente | Estático | Fuerte | Sí | Medio-Bajo | Sistemas, Rendimiento, Seguridad de memoria |
+| MATLAB | Intérprete / Compilador JIT | Matricial, Imperativo | Dinámico | Débil | Sí | Alto | Ingeniería, Matemáticas, Simulación |
+| PHP | Intérprete (Ejecutado por servidor web) | Orientado a Objetos, Imperativo | Dinámico | Débil | No | Medio | Desarrollo Web (Backend) |
+| Ada | Compilado | Imperativo, Orientado a Objetos, Concurrente | Estático | Fuerte | No | Medio | Sistemas críticos (Aeroespacial, Defensa) |
+| Assembly language | Ensamblador (a binario) | Imperativo, Procedural | Estático | Fuerte | N/A | Muy Bajo | Programación de bajo nivel, Optimización |
+| Scratch | Intérprete (Visual) | Event-driven, Bloques | Dinámico | Débil | N/A | Muy Alto | Educación, Programación visual para principiantes |
+| Kotlin | Compilado a Bytecode (JVM) | Orientado a Objetos, Funcional | Estático | Fuerte | Sí | Medio | Desarrollo Android, Backend |
