@@ -1,4 +1,4 @@
-```markdown
+markdown
 | Lenguaje | Mecanismo de Traducción | Paradigma(s) Principal(es) | Sistema de Tipado (Rigidez) | Sistema de Tipado (Verificación) | Inferencia de Tipos | Nivel de Abstracción | Uso Principal |
 |---------------|-------------------------|-------------------------------------------------------------|-----------------------------|----------------------------------|---------------------|----------------------|----------------------------------|
 | Python | Interpretado | Imperativa, Orientada a Objetos, Funcional, Multiparadigma | Fuerte | Dinámico | Sí | Alto | Desarrollo web, Ciencia de datos |
@@ -21,4 +21,3 @@
 | Perl | Interpretado | Imperativa, Procedimental, Orientada a Objetos | Débil | Dinámico | No | Alto | Scripting, Administración sistemas |
 | SQL | Interpretado | Declarativo | Fuerte | Dinámico | No | Alto | Bases de datos |
 | Lua | Interpretado | Imperativa, Procedimental, Funcional | Débil | Dinámico | No | Alto | Juegos, Sistemas embebidos |
-```
