@@ -1,10 +1,5 @@
-# Práctica: Análisis y Comparación de Modelos de Desarrollo de Software
-
----
-
+# Análisis y Comparación de Modelos de Desarrollo de Software
 ## Parte 1: Análisis comparativo de modelos de desarrollo de software
-
-Completa la siguiente tabla comparativa con la información extraída de los materiales del curso.
 
 | Característica/Aspecto | Modelos Clásicos (Predictivos) | Modelos Evolutivos o Incrementales | Metodologías Ágiles (Adaptativas) |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
