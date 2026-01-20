@@ -1,6 +1,6 @@
 <center>
 
-![Logotipo del centro deportivo](/img/001.PNG)
+![Logotipo del centro deportivo](img/001.PNG)
 
 </center>
 
@@ -34,7 +34,7 @@ Una empresa quiere desarrollar un sistema para gestionar una **plataforma de re
 Elabora un diagrama de casos de uso UML empleando la herramienta de modelado que estés utilizando (StarUML, draw.io). 
 
 
-![Diagrama de casos de uso](/img/002.PNG)
+![Diagrama de casos de uso](img/002.PNG)
 
 
 
