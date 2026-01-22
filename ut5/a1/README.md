@@ -1,10 +1,13 @@
 <center>
+    
 # UT5-A1 Digrama de casos de uso de una plataforma de reservas online deportivas
     
 ![Logotipo del centro deportivo](img/001.PNG)
 
 </center>
+
 ## Enunciado
+
 Una empresa quiere desarrollar un sistema para gestionar una **plataforma de reservas online** de instalaciones deportivas municipales (pistas de pádel, pistas polideportivas, piscinas, salas de musculación, etc.). La plataforma permitirá a los ciudadanos registrarse, consultar disponibilidad y realizar reservas, mientras que los administradores podrán gestionar instalaciones, horarios y usuarios.
 
 - Lee detenidamente el siguiente texto descriptivo:
@@ -31,7 +34,7 @@ Elabora un diagrama de casos de uso UML empleando la herramienta de modelado que
 
 ## Diagrama
 ![Diagrama de casos de uso](img/002.PNG)
-Javier Reyes Perdomo
+                                                        Javier Reyes Perdomo
 
 
 
