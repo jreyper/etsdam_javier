@@ -26,4 +26,3 @@ inicial.
 ![Diagrama de casos de uso](/img/001.PNG)
 
 
-
