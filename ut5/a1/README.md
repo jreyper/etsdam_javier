@@ -22,9 +22,8 @@ Una empresa quiere desarrollar un sistema para gestionar una **plataforma de re
 
 | ACTOR | DESCRIPCION DEL ACTOR | CASOS DE USO DEL ACTOR |
 |:-----:|:---------------------:|:----------------------:|
-|    Ciudadano   |  Usuario registrado en la plataforma                     |   Registrarse, iniciar sesión, Realizar reserva, Cancelar reserva, modificar perfil, consultar disponibilidad                    |
-|       |                       |                        |
-    |                       |                        |
+|    Ciudadano   |  Usuario registrado en la plataforma  |   Registrarse, iniciar sesión, realizar reserva, cancelar reserva, modificar perfil, consultar disponibilidad   |
+|  Administrador     |  Gestiona el sistema y las instalaciones         |  Consultar usuarios, bloquear usuario, desactivar instalación, modificar instalación           |
 
 
 Elabora un diagrama de casos de uso UML empleando la herramienta de modelado que estés utilizando (StarUML, draw.io). 
