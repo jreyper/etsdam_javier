@@ -34,7 +34,7 @@ Elabora un diagrama de casos de uso UML empleando la herramienta de modelado que
 
 ## Diagrama
 ![Diagrama de casos de uso](img/002.PNG)
-                                                        Javier Reyes Perdomo
+Javier Reyes Perdomo 1ºDAM
 
 
 
