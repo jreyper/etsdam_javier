@@ -23,6 +23,6 @@ inicial.
 - Tanto para realizar el pago, obtener el histórico y ver el estado de la mascota ingresada es necesario que el cliente se identifique en la aplicación.. 
 
 
-![Diagrama de casos de uso](/img/001.PNG)
+![Diagrama de casos de uso](/001.PNG)
 
 
