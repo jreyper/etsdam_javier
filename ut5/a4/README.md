@@ -1,3 +1,6 @@
+# UT5-A4 Diagrama de secuencias del procedimiento de compra de billetes
+
+
 Modela un **diagrama de secuencia UML** correspondiente al siguiente flujo funcional exacto del sistema. No se permite omitir, fusionar ni reinterpretar mensajes. Debes representar **todos los objetos, todos los mensajes síncronos, todos los mensajes de retorno y todas las condiciones descritas**, exactamente en el orden indicado.
 
 **Contexto**
@@ -56,7 +59,7 @@ Cuando el **Usuario** pulsa el botón “Comprar”, ocurre la siguiente secuenc
 
 A continuación se muestra el diagrama de secuencias:
 
-![Diagrama de secuencias](/img/001.png)
+![Diagrama de secuencias](img/001.png)
 
 
 
