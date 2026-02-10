@@ -28,7 +28,8 @@ La empresa dispone de **Coches**, cada uno con:
 - `color` (string)
 - `cocheDisponible` (boolean)
 
-Cada Coche está **asignado permanentemente a un único Garaje**, y esta asignación **no puede cambiar**.  
+Cada Coche está **asignado permanentemente a un único Garaje**, y esta asignación **no puede cambiar**.  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbYLOOGLNC9SK1RWsxIKxeVtskeSzvNHUOrfJYc+ERg dam@a104pc10
+
 Un Garaje puede almacenar varios coches.
 
 **Garaje**
@@ -94,4 +95,4 @@ Para cada una de las clases se deben implementar los siguientes **métodos**:
 
 A continuación se muestra el diagrama de clases creado:
 
-![Diagrama de clases](/001.png)
+![Diagrama de clases](001.png)
