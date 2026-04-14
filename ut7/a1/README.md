@@ -130,13 +130,21 @@ public class Tienda {
 
 
 -Somil
+
 -Javier
+
 -Eugenio
+
 Entregable
+
 Cada grupo deberá entregar un documento que incluya:
+
 ●​ Una lista de los problemas detectados en el código
+
 ●​ Una breve explicación de cada problema
+
 ●​ Una posible mejora para cada caso
+
 Trataremos las siguientes cuestiones:
 - ¿Hay métodos demasiado largos?
 - ¿Las variables tienen nombres claros y descriptivos?
@@ -151,11 +159,13 @@ código por parte de los programadores que vean el mismo.
 Como posible mejora podríamos cambiar las variables n,p y c por nombre, precio y
 cantidad respectivamente para facilitar la comprensión del código, además dentro
 del bucle for podría cambiar la variable p por producto.
+
 El segundo problema que hemos detectado es la falta de documentación que
 explique las funciones lo que dificultará las tareas de comprensión del código al
 igual que el primer problema detectado.
 Como posible mejora se podrían añadir comentarios que expliquen el
 funcionamiento de cada parte de la función main.
+
 Como tercer y último problema creemos que se podría simplificar el código creando
 dos funciones para calcular el envío del producto y añadir productos al carrito.
 Como mejora creemos que podrían implementar estos dos métodos:​
