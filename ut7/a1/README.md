@@ -140,7 +140,9 @@ Entregable
 Cada grupo deberá entregar un documento que incluya:
 
 ●​ Una lista de los problemas detectados en el código
+
 ●​ Una breve explicación de cada problema
+
 ●​ Una posible mejora para cada caso
 
 Trataremos las siguientes cuestiones:
