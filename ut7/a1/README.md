@@ -90,7 +90,7 @@ public class Tienda {
         double total = 0;
 
         for (int i = 0; i < lista.size(); i++) {
-
+¿Hay métodos demasiado largos?
             Producto p = lista.get(i);
 
             double subtotal = p.p * p.c;
@@ -120,7 +120,7 @@ public class Tienda {
 
         if (total > 500) {
             System.out.println("Cliente VIP");
-        }
+        }¿Hay métodos demasiado largos?
 
     }
 }
@@ -179,7 +179,6 @@ public static double calcularCosteEnvio(double subtotal) {
     }
 }
 public static void añadirProducto(ArrayList<Producto> lista, String nombre, double precio, int cantidad) {
-
     Producto nuevo = new Producto(nombre, precio, cantidad);
     lista.add(nuevo);
     }
