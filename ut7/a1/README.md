@@ -170,7 +170,7 @@ funcionamiento de cada parte de la función main.
 Como tercer y último problema creemos que se podría simplificar el código creando
 dos funciones para calcular el envío del producto y añadir productos al carrito.
 Como mejora creemos que podrían implementar estos dos métodos:​
-
+```java
 public static double calcularCosteEnvio(double subtotal) {
 
 if (subtotal > 100) {
@@ -194,3 +194,4 @@ Producto nuevo = new Producto(nombre, precio, cantidad);
 lista.add(nuevo);
 
 }
+```
