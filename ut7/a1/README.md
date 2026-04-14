@@ -140,9 +140,7 @@ Entregable
 Cada grupo deberá entregar un documento que incluya:
 
 ●​ Una lista de los problemas detectados en el código
-
 ●​ Una breve explicación de cada problema
-
 ●​ Una posible mejora para cada caso
 
 Trataremos las siguientes cuestiones:
@@ -153,6 +151,7 @@ Trataremos las siguientes cuestiones:
 - ¿El código mezcla distintas responsabilidades?
 - ¿El programa sería fácil de modificar o ampliar?
 - ¿Falta documentación o comentarios que expliquen el funcionamiento?
+  
 El primer problema que hemos detectado en el código es el uso de variables con
 nombres poco descriptivos, lo que puede dificultar las tareas de comprensión del
 código por parte de los programadores que vean el mismo.
