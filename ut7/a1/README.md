@@ -172,15 +172,15 @@ dos funciones para calcular el envío del producto y añadir productos al carrit
 Como mejora creemos que podrían implementar estos dos métodos:​
 ```java
 public static double calcularCosteEnvio(double subtotal) {
-if (subtotal > 100) {
-return 0; // Envío gratis
-} else {
-return 5; // Coste fijo
+    if (subtotal > 100) {
+        return 0; // Envío gratis
+    } else {
+        return 5; // Coste fijo
+    }
 }
-}
-public static void añadirProducto(ArrayList<Producto> lista, String nombre, double
-precio, int cantidad) {
-Producto nuevo = new Producto(nombre, precio, cantidad);
-lista.add(nuevo);
-}
+public static void añadirProducto(ArrayList<Producto> lista, String nombre, double precio, int cantidad) {
+
+    Producto nuevo = new Producto(nombre, precio, cantidad);
+    lista.add(nuevo);
+    }
 ```
