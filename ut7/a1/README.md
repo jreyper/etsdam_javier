@@ -2,7 +2,7 @@
 
 
 ### Objetivo de la práctica
-
+¿Hay métodos demasiado largos?
 El objetivo de esta práctica es **analizar un programa que funciona correctamente pero cuya calidad de código es mejorable**.
 
 Durante la sesión se realizará un **análisis colectivo del código para detectar “malos olores” (code smells)**. Estos son indicios de que el diseño del programa podría mejorarse mediante técnicas de refactorización.
@@ -172,26 +172,15 @@ dos funciones para calcular el envío del producto y añadir productos al carrit
 Como mejora creemos que podrían implementar estos dos métodos:​
 ```java
 public static double calcularCosteEnvio(double subtotal) {
-
 if (subtotal > 100) {
-
 return 0; // Envío gratis
-
 } else {
-
 return 5; // Coste fijo
-
 }
-
 }
-
 public static void añadirProducto(ArrayList<Producto> lista, String nombre, double
-
 precio, int cantidad) {
-
 Producto nuevo = new Producto(nombre, precio, cantidad);
-
 lista.add(nuevo);
-
 }
 ```
