@@ -102,7 +102,7 @@ public class Tienda {
             System.out.println("Producto: " + p.n);
             System.out.println("Precio: " + p.p);
             System.out.println("Cantidad: " + p.c);
-            System.out.println("Subtotal: " + subtotal);
+            System.out.println("Subtotal: " + subtotal);¿Hay métodos demasiado largos?
 
             if (subtotal > 100) {
                 System.out.println("Envio gratis");
@@ -172,14 +172,25 @@ dos funciones para calcular el envío del producto y añadir productos al carrit
 Como mejora creemos que podrían implementar estos dos métodos:​
 
 public static double calcularCosteEnvio(double subtotal) {
+
 if (subtotal > 100) {
+
 return 0; // Envío gratis
+
 } else {
+
 return 5; // Coste fijo
+
 }
+
 }
+
 public static void añadirProducto(ArrayList<Producto> lista, String nombre, double
+
 precio, int cantidad) {
+
 Producto nuevo = new Producto(nombre, precio, cantidad);
+
 lista.add(nuevo);
+
 }
