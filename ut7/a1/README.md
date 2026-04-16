@@ -2,7 +2,7 @@
 
 
 ### Objetivo de la práctica
-
+¿Hay métodos demasiado largos?
 El objetivo de esta práctica es **analizar un programa que funciona correctamente pero cuya calidad de código es mejorable**.
 
 Durante la sesión se realizará un **análisis colectivo del código para detectar “malos olores” (code smells)**. Estos son indicios de que el diseño del programa podría mejorarse mediante técnicas de refactorización.
@@ -90,7 +90,7 @@ public class Tienda {
         double total = 0;
 
         for (int i = 0; i < lista.size(); i++) {
-
+¿Hay métodos demasiado largos?
             Producto p = lista.get(i);
 
             double subtotal = p.p * p.c;
@@ -102,7 +102,7 @@ public class Tienda {
             System.out.println("Producto: " + p.n);
             System.out.println("Precio: " + p.p);
             System.out.println("Cantidad: " + p.c);
-            System.out.println("Subtotal: " + subtotal);
+            System.out.println("Subtotal: " + subtotal);¿Hay métodos demasiado largos?
 
             if (subtotal > 100) {
                 System.out.println("Envio gratis");
@@ -120,7 +120,7 @@ public class Tienda {
 
         if (total > 500) {
             System.out.println("Cliente VIP");
-        }
+        }¿Hay métodos demasiado largos?
 
     }
 }
@@ -130,13 +130,21 @@ public class Tienda {
 
 
 -Somil
+
 -Javier
+
 -Eugenio
+
 Entregable
+
 Cada grupo deberá entregar un documento que incluya:
+
 ●​ Una lista de los problemas detectados en el código
+
 ●​ Una breve explicación de cada problema
+
 ●​ Una posible mejora para cada caso
+
 Trataremos las siguientes cuestiones:
 - ¿Hay métodos demasiado largos?
 - ¿Las variables tienen nombres claros y descriptivos?
@@ -145,30 +153,33 @@ Trataremos las siguientes cuestiones:
 - ¿El código mezcla distintas responsabilidades?
 - ¿El programa sería fácil de modificar o ampliar?
 - ¿Falta documentación o comentarios que expliquen el funcionamiento?
+  
 El primer problema que hemos detectado en el código es el uso de variables con
 nombres poco descriptivos, lo que puede dificultar las tareas de comprensión del
 código por parte de los programadores que vean el mismo.
 Como posible mejora podríamos cambiar las variables n,p y c por nombre, precio y
 cantidad respectivamente para facilitar la comprensión del código, además dentro
 del bucle for podría cambiar la variable p por producto.
+
 El segundo problema que hemos detectado es la falta de documentación que
 explique las funciones lo que dificultará las tareas de comprensión del código al
 igual que el primer problema detectado.
 Como posible mejora se podrían añadir comentarios que expliquen el
 funcionamiento de cada parte de la función main.
+
 Como tercer y último problema creemos que se podría simplificar el código creando
 dos funciones para calcular el envío del producto y añadir productos al carrito.
 Como mejora creemos que podrían implementar estos dos métodos:​
-
+```java
 public static double calcularCosteEnvio(double subtotal) {
-if (subtotal > 100) {
-return 0; // Envío gratis
-} else {
-return 5; // Coste fijo
+    if (subtotal > 100) {
+        return 0; // Envío gratis
+    } else {
+        return 5; // Coste fijo
+    }
 }
-}
-public static void añadirProducto(ArrayList<Producto> lista, String nombre, double
-precio, int cantidad) {
-Producto nuevo = new Producto(nombre, precio, cantidad);
-lista.add(nuevo);
-}
+public static void añadirProducto(ArrayList<Producto> lista, String nombre, double precio, int cantidad) {
+    Producto nuevo = new Producto(nombre, precio, cantidad);
+    lista.add(nuevo);
+    }
+```
