@@ -218,7 +218,7 @@ Las pruebas iniciales solo se centraban en los errores. Específicamente, la sum
 Un test con muchas notas válidas para comprobar que está bien, y un test con una única nota para asegurar que la división no falla con el tamaño mínimo de array.
 + ¿Qué cobertura ``final`` has obtenido?
 
-He obtenido un 100% de cobertura, se ejecutan todas las líneas de código y se validan todas las condiciones lógicas de los bloques ``if``.
+He obtenido un 100% de cobertura, se ejecutan todas las líneas de código y se validan todas las condiciones lógicas de los ``if``.
 
 Debes subir a tu repositorio de GitHub:
 
