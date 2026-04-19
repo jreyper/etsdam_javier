@@ -1,44 +1,124 @@
 package com.tienda;
-
 import java.util.List;
+import org.junit.jupiter.api.Test;
+import com.tienda.CarritoService;
+import com.tienda.Producto;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CarritoServiceTest {
 
-    
-    public double calcularSubtotal(List<Producto> carrito) {
-        double subtotal = 0;
+    CarritoService service = new CarritoService();
 
-        for (Producto p : carrito) {
-            subtotal += p.getPrecio() * p.getCantidad();
-        }
+    @Test
+    void subtotal_variosProductos() {
+        List<Producto> carrito = List.of(
+                new Producto("teclado", 30, 2),
+                new Producto("raton", 10, 1)
+        );
 
-        return subtotal;
+        double resultado = service.calcularSubtotal(carrito);
+
+        assertEquals(70, resultado); // 30*2 + 10*1
     }
 
-    
-    public double aplicarDescuento(double subtotal, double descuento) {
-        if (descuento < 0 || descuento > 100) {
-            throw new IllegalArgumentException("Descuento debe estar entre 0 y 100");
-        }
+    @Test
+    void subtotal_unProducto() {
+        List<Producto> carrito = List.of(
+                new Producto("monitor", 100, 1)
+        );
 
-        return subtotal - (subtotal * descuento / 100);
+        double resultado = service.calcularSubtotal(carrito);
+
+        assertEquals(100, resultado);
     }
 
-    
-    public double calcularEnvio(double subtotal) {
-        if (subtotal >= 100) {
-            return 0;
-        } else {
-            return 5;
-        }
+    @Test
+    void subtotal_carritoVacio() {
+        List<Producto> carrito = List.of();
+
+        double resultado = service.calcularSubtotal(carrito);
+
+        assertEquals(0, resultado);
     }
 
-    
-    public double calcularTotal(List<Producto> carrito, double descuento) {
-        double subtotal = calcularSubtotal(carrito);
-        double subtotalConDescuento = aplicarDescuento(subtotal, descuento);
-        double envio = calcularEnvio(subtotalConDescuento);
+    @Test
+    void descuento_0() {
+        double resultado = service.aplicarDescuento(100, 0);
+        assertEquals(100, resultado);
+    }
 
-        return subtotalConDescuento + envio;
+    @Test
+    void descuento_valido() {
+        double resultado = service.aplicarDescuento(100, 10);
+        assertEquals(90, resultado);
+    }
+
+    @Test
+    void descuento_100() {
+        double resultado = service.aplicarDescuento(100, 100);
+        assertEquals(0, resultado);
+    }
+
+    @Test
+    void descuento_negativo() {
+        double resultado = service.aplicarDescuento(100, -10);
+        assertEquals(100, resultado); // comportamiento esperado (no aplicar)
+    }
+
+    @Test
+    void descuento_mayor100() {
+        double resultado = service.aplicarDescuento(100, 150);
+        assertEquals(100, resultado); // comportamiento esperado
+    }
+
+    @Test
+    void envio_menor100() {
+        double resultado = service.calcularEnvio(50);
+        assertEquals(5, resultado);
+    }
+
+    @Test
+    void envio_igual100() {
+        double resultado = service.calcularEnvio(100);
+        assertEquals(0, resultado);
+    }
+
+    @Test
+    void envio_mayor100() {
+        double resultado = service.calcularEnvio(150);
+        assertEquals(0, resultado);
+    }
+
+    @Test
+    void total_sinDescuento() {
+        List<Producto> carrito = List.of(
+                new Producto("teclado", 50, 1)
+        );
+
+        double resultado = service.calcularTotal(carrito, 0);
+
+        assertEquals(55, resultado); // 50 + 5 envío
+    }
+
+    @Test
+    void total_conDescuento() {
+        List<Producto> carrito = List.of(
+                new Producto("teclado", 100, 1)
+        );
+
+        double resultado = service.calcularTotal(carrito, 10);
+
+        assertEquals(90, resultado); // envío gratis
+    }
+
+    @Test
+    void total_envioGratis() {
+        List<Producto> carrito = List.of(
+                new Producto("teclado", 120, 1)
+        );
+
+        double resultado = service.calcularTotal(carrito, 0);
+
+        assertEquals(120, resultado);
     }
 }
