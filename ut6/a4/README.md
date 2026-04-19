@@ -231,7 +231,7 @@ public class CarritoService {
     public double calcularTotal(List<Producto> carrito, double descuento) {
         double subtotal = calcularSubtotal(carrito);
         double conDescuento = aplicarDescuento(subtotal, descuento);
-        double envio = calcularEnvio(conDescuento);
+        double envio = calcularEnvio(subtotal);
         return conDescuento + envio;
     }
 }
@@ -243,7 +243,9 @@ Tras diseñar los tests y analizar el código:
 - ¿cuántos tests has implementado?
 14
 - ¿qué porcentaje de cobertura has obtenido?
+100%
 - ¿todos los tests pasan correctamente?
+si, pasan todos
 
 
 
