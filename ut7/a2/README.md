@@ -1,8 +1,8 @@
-**\ -Javier Reyes Perdomo** 
+** -Javier Reyes Perdomo** 
 
-**\ -Somil** 
+** -Somil** 
 
-**\ -Eugenio Ojeda Ojeda**
+** -Eugenio Ojeda Ojeda**
 
 
 **Este es el código sin modificar:**
