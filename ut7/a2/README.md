@@ -19,9 +19,9 @@ class Producto {
 
 
    public Producto(String n, double p, int c) { 
-       this.n \= n; 
-       this.p \= p; 
-       this.c \= c; 
+       this.n = n; 
+       this.p = p; 
+       this.c = c; 
    } 
 }
 
@@ -29,10 +29,10 @@ class Producto {
 public class Tienda {
 
 
-   public static void main(String\[\] args) {
+   public static void main(String[] args) {
 
 
-       ArrayList\<Producto\> lista \= new ArrayList\<\>();
+       ArrayList<Producto> lista = new ArrayList\<>();
 
 
        lista.add(new Producto("Teclado", 30, 2)); 
@@ -40,45 +40,45 @@ public class Tienda {
        lista.add(new Producto("Monitor", 200, 1));
 
 
-       double total \= 0;
+       double total = 0;
 
 
-       for (int i \= 0; i \< lista.size(); i++) {
+       for (int i = 0; i < lista.size(); i++) {
 
 
-           Producto p \= lista.get(i);
+           Producto p = lista.get(i);
 
 
-           double subtotal \= p.p \* p.c;
+           double subtotal = p.p * p.c;
 
 
-           if (p.c \> 2) { 
-               subtotal \= subtotal \- (subtotal \* 0.1); 
+           if (p.c > 2) { 
+               subtotal = subtotal - (subtotal * 0.1); 
            }
 
 
-           System.out.println("Producto: " \+ p.n); 
-           System.out.println("Precio: " \+ p.p); 
-           System.out.println("Cantidad: " \+ p.c); 
-           System.out.println("Subtotal: " \+ subtotal);
+           System.out.println("Producto: " + p.n); 
+           System.out.println("Precio: " + p.p); 
+           System.out.println("Cantidad: " + p.c); 
+           System.out.println("Subtotal: " + subtotal);
 
 
-           if (subtotal \> 100) { 
+           if (subtotal > 100) { 
                System.out.println("Envio gratis"); 
            } else { 
                System.out.println("Envio: 5 euros"); 
-               subtotal \= subtotal \+ 5; 
+               subtotal = subtotal + 5; 
            }
 
 
-           total \= total \+ subtotal;
+           total = total + subtotal;
 
 
            System.out.println("-------------------"); 
        }
 
 
-       System.out.println("TOTAL PEDIDO: " \+ total);
+       System.out.println("TOTAL PEDIDO: " + total);
 
 
        if (total \> 500) { 
@@ -103,25 +103,25 @@ public class Tienda {
 
 
  // Valores del programa (descuento, envío, etc.) para poder cambiarlos facilmente sin tocar el resto del código 
- private static final double descuentoCantidad\= 2; 
- private static final double porcentajeDescuento\= 0.10; 
- private static final double umbralEnvioGratis \= 100; 
- private static final double costeEnvioEstandar\= 5.0; 
- private static final double umbralCLienteVip\= 500;
+ private static final double descuentoCantidad = 2; 
+ private static final double porcentajeDescuento = 0.10; 
+ private static final double umbralEnvioGratis = 100; 
+ private static final double costeEnvioEstandar = 5.0; 
+ private static final double umbralCLienteVip = 500;
 
 
- public static void main(String\[\] args) { 
-     List\<Producto\> carrito \= cargarProductosCarrito(); 
+ public static void main(String[] args) { 
+     List<Producto> carrito = cargarProductosCarrito(); 
      procesarPedidoCompleto(carrito); 
  }
 
 
- /\*\* 
-  \* Organizacion y extraccion de metodos. 
-  \* Carga la lista inicial de productos. 
-  \*/ 
- private static List\<Producto\> cargarProductosCarrito() { 
-     List\<Producto\> lista \= new ArrayList\<\>(); 
+ /** 
+  * Organizacion y extraccion de metodos. 
+  * Carga la lista inicial de productos. 
+  */ 
+ private static List<Producto> cargarProductosCarrito() { 
+     List<Producto> lista = new ArrayList<>(); 
      lista.add(new Producto("Teclado", 30.0, 2)); 
      lista.add(new Producto("Ratón", 15.0, 3)); 
      lista.add(new Producto("Monitor", 200.0, 1)); 
@@ -129,21 +129,21 @@ public class Tienda {
  }
 
 
- /\*\* 
-  \* Dividir bloques largos y evitar lógica concentrada en un metodo. 
-  \*/ 
- private static void procesarPedidoCompleto(List\<Producto\> productos) { 
-     double totalAcumulado \= 0;
+ /** 
+  * Dividir bloques largos y evitar lógica concentrada en un metodo. 
+  */ 
+ private static void procesarPedidoCompleto(List<Producto> productos) { 
+     double totalAcumulado = 0;
 
 
      for (Producto producto : productos) { 
-         double subtotalCalculado \= calcularSubtotalConDescuento(producto); 
-         double costeEnvio \= calcularGastosEnvio(subtotalCalculado);
+         double subtotalCalculado = calcularSubtotalConDescuento(producto); 
+         double costeEnvio = calcularGastosEnvio(subtotalCalculado);
 
 
          imprimirFichaProducto(producto, subtotalCalculado, costeEnvio); 
         
-         totalAcumulado \+= (subtotalCalculado \+ costeEnvio); 
+         totalAcumulado += (subtotalCalculado + costeEnvio); 
      }
 
 
@@ -151,24 +151,25 @@ public class Tienda {
  }
 
 
- /\*\* 
-  \* Simplificacion de condiciones y responsabilidad unica. 
-  \*/ 
+ /** 
+  * Simplificacion de condiciones y responsabilidad unica. 
+  */ 
  private static double calcularSubtotalConDescuento(Producto producto) { 
-     double subtotalBase \= producto.getPrecioUnitario() \* producto.getCantidad(); 
+     double subtotalBase = producto.getPrecioUnitario() * producto.getCantidad(); 
     
-     if (producto.getCantidad() \> descuentoCantidad) { 
-         return subtotalBase \* (1 \- porcentajeDescuento); 
+     if (producto.getCantidad() > descuentoCantidad) { 
+         return subtotalBase * (1 - porcentajeDescuento); 
      } 
      return subtotalBase; 
  }
 
 
- /\*\* 
-  \* Reutilizacion de logica y reduccion de complejidad. 
-  \*/ 
+ /** 
+Ejercicio 8 – Parte de red y hosts.
+  * Reutilizacion de logica y reduccion de complejidad. 
+  */ 
  private static double calcularGastosEnvio(double subtotal) { 
-  if (subtotal \> umbralEnvioGratis) { 
+  if (subtotal > umbralEnvioGratis) { 
       return 0; 
   } else { 
       return costeEnvioEstandar; 
@@ -176,22 +177,22 @@ public class Tienda {
 }
 
 
- /\*\* 
-  \* Eliminación de codigo duplicado y mejora de legibilidad. 
-  \*/ 
+ /** 
+  * Eliminación de codigo duplicado y mejora de legibilidad. 
+  */ 
  private static void imprimirFichaProducto(Producto producto, double subtotal, double envio) { 
-     System.out.println("Producto: " \+ producto.getNombre()); 
-     System.out.println("Precio: " \+ producto.getPrecioUnitario() \+ "€"); 
-     System.out.println("Cantidad: " \+ producto.getCantidad()); 
-     System.out.println("Subtotal (dto. incluido): " \+ subtotal \+ "€"); 
+     System.out.println("Producto: " + producto.getNombre()); 
+     System.out.println("Precio: " + producto.getPrecioUnitario() + "€"); 
+     System.out.println("Cantidad: " + producto.getCantidad()); 
+     System.out.println("Subtotal (dto. incluido): " + subtotal + "€"); 
     
      String mensajeEnvio;
 
 
-if (envio \== 0\) { 
-mensajeEnvio \= "Envío gratis"; 
+if (envio == 0) { 
+mensajeEnvio = "Envío gratis"; 
 } else { 
-mensajeEnvio \= "Envío: " \+ envio \+ "€"; 
+mensajeEnvio = "Envío: " + envio + "€"; 
 } 
      System.out.println(mensajeEnvio); 
      System.out.println("-------------------"); 
@@ -199,9 +200,9 @@ mensajeEnvio \= "Envío: " \+ envio \+ "€";
 
 
  private static void imprimirResumenFinal(double total) { 
-     System.out.println("TOTAL PEDIDO: " \+ total \+ "€"); 
-     if (total \> umbralCLienteVip) { 
-         System.out.println("\>\>\> CATEGORÍA: Cliente VIP \<\<\<"); 
+     System.out.println("TOTAL PEDIDO: " + total + "€"); 
+     if (total > umbralCLienteVip) { 
+         System.out.println(">>> CATEGORÍA: Cliente VIP <<<"); 
      } 
  } 
 }
@@ -212,9 +213,9 @@ mensajeEnvio \= "Envío: " \+ envio \+ "€";
 
 
 ```
-/\* 
-\* Representa un artículo en el inventario con nombres descriptivos. 
-\*/ 
+/** 
+* Representa un artículo en el inventario con nombres descriptivos. 
+*/ 
 class Producto { 
  private final String nombre; 
  private final double precioUnitario; 
@@ -222,9 +223,9 @@ class Producto {
 
 
  public Producto(String nombre, double precioUnitario, int cantidad) { 
-     this.nombre \= nombre; 
-     this.precioUnitario \= precioUnitario; 
-     this.cantidad \= cantidad; 
+     this.nombre = nombre; 
+     this.precioUnitario = precioUnitario; 
+     this.cantidad = cantidad; 
  }
 
 
